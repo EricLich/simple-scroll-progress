@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 500vh;
+  overflow-x: hidden;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+#progress-bar {
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -15px;
+  height: 15px;
+  background: linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+main {
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.1);
+}
